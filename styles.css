@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Norse';
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+.left-wrapper,
+.right-wrapper {
+  display: flex;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Helvetica", "Tahoma", "Arial", sans-serif;
+}
+
+.left-wrapper,
+.right-wrapper {
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.left-wrapper {
+  width: 40%;
+  background-image: url(./assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  row-gap: 50%;
+}
+
+.mobile-header {
+  display: none;
+  height: 70px;
+  padding: 10px;
+  background-color: black;
+}
+
+.mobile-odin-logo {
+  height: 90%;
+}
+
+.logo-wrapper {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.odin-title {
+  font-family: "Norse", sans-serif;
+  color: white;
+  font-size: 130px;
+  align-self: flex-end ;
+}
+
+.background-credits,
+.background-credits a {
+  color: white;
+}
+
+.background-credits {
+  align-self: center;
+}
+
+@media only screen and (max-width: 685px) {
+  .logo-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  body {
+    flex-direction: column;
+  }
+  .left-wrapper {
+    display: none;
+  }
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
