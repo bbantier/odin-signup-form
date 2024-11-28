@@ -24,7 +24,6 @@ body {
 .left-wrapper,
 .right-wrapper {
   flex-direction: column;
-  justify-content: flex-end;
   height: 100%;
 }
 
@@ -33,7 +32,12 @@ body {
   background-image: url(./assets/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  justify-content: flex-end;
   row-gap: 50%;
+}
+
+.right-wrapper {
+  width: 60%;
 }
 
 .mobile-header {
@@ -69,6 +73,51 @@ body {
 
 .background-credits {
   align-self: center;
+}
+
+.right-wrapper {
+  background-color: #F9FAFB;
+}
+
+.intro {
+  padding: 50px;
+}
+
+.intro p {
+  font-size: 1.7rem;
+  line-height: 1.9rem;
+}
+
+.intro p + p {
+  margin-top: 15px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+}
+
+.form-row + .form-row {
+  margin-top: 15px;
+}
+
+.form-label {
+  display: block;
+  text-transform: uppercase;
+  color: #494949;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.2ch;
+  margin-bottom: 3px;
+}
+
+.form-input {
+  width: 100%;
+  border: 1px solid #E5E7EB;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 685px) {

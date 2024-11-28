@@ -34,13 +34,92 @@
       />
     </div>
     <div class="right-wrapper">
-      <p>This is not a real signup form even though it looks like one. I swear it's not meant to steal your data.</p>
-      <p>Feel free to use it as a fidget toy!</p>
-      <form action="" method="post" class="signup-form">
-        <div class="form-row"></div>
-        <div class="form-row"></div>
-        <div class="form-row"></div>
-      </form>
+      <div class="intro">
+        <p>
+          This is not a real signup form even though it looks like one. I swear
+          it's not meant to steal your data.
+        </p>
+        <p>Feel free to use it as a fidget toy!</p>
+      </div>
+      <div class="form-wrapper">
+        <form action="" method="post" class="signup-form">
+          <h2 class="form-title">Sign-up</h2>
+          <div class="form-row">
+            <div class="input-wrapper">
+              <label class="form-label" for="first-name" aria-required="true"
+                >First name</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                id="first-name"
+                name="first_name"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <label class="form-label" for="last-name" aria-required="true"
+                >Last name</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                id="last-name"
+                name="last_name"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-wrapper">
+              <label class="form-label" for="email" aria-required="true"
+                >Email</label
+              >
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <label class="form-label" for="phone-number">Phone number</label>
+              <input
+                class="form-input"
+                type="tel"
+                id="phone-number"
+                name="phone_number"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-wrapper">
+              <label class="form-label" for="password" aria-required="true"
+                >Password</label
+              >
+              <input
+                class="form-input"
+                type="password"
+                id="password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <label class="form-label" for="confirm-password"
+                >Confirm password</label
+              >
+              <input
+                class="form-input"
+                type="password"
+                id="confirm-password"
+                name="confirm_password"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
