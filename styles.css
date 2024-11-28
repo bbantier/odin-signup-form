@@ -1,9 +1,11 @@
 @font-face {
-  font-family: 'Norse';
+  font-family: "Norse";
   src: url(./fonts/Norse-Bold.otf);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -63,7 +65,7 @@ body {
   font-family: "Norse", sans-serif;
   color: white;
   font-size: 130px;
-  align-self: flex-end ;
+  align-self: flex-end;
 }
 
 .background-credits,
@@ -76,11 +78,15 @@ body {
 }
 
 .right-wrapper {
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
 }
 
 .intro {
   padding: 50px;
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .intro p {
@@ -92,14 +98,27 @@ body {
   margin-top: 15px;
 }
 
-.form-row {
-  display: flex;
-  justify-content: center;
-  gap: 15%;
+.form-wrapper {
+  height: 67vh;
 }
 
-.form-row + .form-row {
-  margin-top: 15px;
+.signup-form {
+  height: 100%;
+}
+
+.rows-wrapper {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 20px 0 20px 50px;
+  box-shadow: 0 0 15px #afafaf;
+}
+
+.form-row {
+  display: flex;
+  gap: 50px;
 }
 
 .form-label {
@@ -109,15 +128,28 @@ body {
   font-size: 0.9rem;
   font-weight: bold;
   letter-spacing: 0.2ch;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .form-input {
   width: 100%;
-  border: 1px solid #E5E7EB;
-  border-radius: 3px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
   padding: 5px;
   font-size: 1.2rem;
+}
+
+.submit-wrapper {
+  padding: 60px 0 20px 50px;
+}
+
+.submit-button {
+  background-color: #3e6c36;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 685px) {
