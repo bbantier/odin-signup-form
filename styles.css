@@ -3,6 +3,10 @@
   src: url(./fonts/Norse-Bold.otf);
 }
 
+:root {
+  --box-shadow: 0 10px 15px #dfdfdf;
+}
+
 *,
 *::before,
 *::after {
@@ -113,7 +117,7 @@ body {
   justify-content: space-evenly;
   background-color: white;
   padding: 20px 0 20px 50px;
-  box-shadow: 0 0 15px #afafaf;
+  box-shadow: var(--box-shadow);
 }
 
 .form-row {
@@ -136,7 +140,17 @@ body {
   border: 1px solid #e5e7eb;
   border-radius: 5px;
   padding: 5px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.form-input:focus {
+  border-color: #3c5ced;
+  box-shadow: var(--box-shadow);
+  outline: none;
+}
+
+.form-input:focus:invalid {
+  border-color: #c70039;
 }
 
 .submit-wrapper {
@@ -150,6 +164,12 @@ body {
   border-radius: 5px;
   color: white;
   font-size: 1.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.login-paragraph {
+  margin-top: 25px;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 685px) {

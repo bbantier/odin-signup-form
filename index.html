@@ -85,7 +85,10 @@
                 />
               </div>
               <div class="input-wrapper">
-                <label class="form-label" for="phone-number"
+                <label
+                  class="form-label"
+                  for="phone-number"
+                  aria-required="true"
                   >Phone number</label
                 >
                 <input
@@ -93,6 +96,8 @@
                   type="tel"
                   id="phone-number"
                   name="phone_number"
+                  required
+                  pattern="^(?:\+1)?\d{10}"
                 />
               </div>
             </div>
@@ -107,6 +112,7 @@
                   id="password"
                   name="password"
                   required
+                  pattern="^.{8}"
                 />
               </div>
               <div class="input-wrapper">
@@ -118,6 +124,8 @@
                   type="password"
                   id="confirm-password"
                   name="confirm_password"
+                  required
+                  pattern="^.{8}"
                 />
               </div>
             </div>
